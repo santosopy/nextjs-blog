@@ -1,5 +1,7 @@
 ### Nextjs MySQL CRUD
 
+ FaztWeb / nextjs-mysql-crud 
+
 Nextjs CRUD using MySQL and TailwindCSS
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
