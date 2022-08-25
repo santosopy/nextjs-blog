@@ -8,6 +8,6 @@ const pool = mysql({
     port: 3306,
     database: "nextdb",
   },
-});
+})
 
 export { pool };
