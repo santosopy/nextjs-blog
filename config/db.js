@@ -12,9 +12,9 @@ import mysql from "serverless-mysql";
 
 const pool = mysql({
   config: {
-    HOST: "y312s3i0b6z4.us-east-4.psdb.cloud",
-    USERNAME: "d9ohwwhbytbc",
-    PASSWORD: "pscale_pw_xBIZI6C12Tkq36mKhTsIKwqsrlNYeZYoDR83tsu7fio",
-    DATABASE: "nextdb"
+    PLANETSCALE_DB_HOST: "y312s3i0b6z4.us-east-4.psdb.cloud",
+    PLANETSCALE_DB_USERNAME: "d9ohwwhbytbc",
+    PLANETSCALE_DB_PASSWORD: "pscale_pw_xBIZI6C12Tkq36mKhTsIKwqsrlNYeZYoDR83tsu7fio",
+    PLANETSCALE_DB: "nextdb"
   }
 })
