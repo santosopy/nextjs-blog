@@ -13,10 +13,8 @@ import mysql from "serverless-mysql";
 const pool = mysql({
   config: {
     HOST: "y312s3i0b6z4.us-east-4.psdb.cloud",
-    USERNAME: "pj8wde4cwgra",
-    PASSWORD: "pscale_pw_iMxGeereQ2bWXBFKqyyeojvznPwPrySccpqt7ad6_HA",
+    USERNAME: "d9ohwwhbytbc",
+    PASSWORD: "pscale_pw_xBIZI6C12Tkq36mKhTsIKwqsrlNYeZYoDR83tsu7fio",
     DATABASE: "nextdb"
   }
 })
-
-export { pool };
