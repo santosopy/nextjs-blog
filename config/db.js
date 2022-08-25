@@ -14,7 +14,7 @@ const pool = mysql({
     USERNAME: "gz22hfjpyfrp",
     PASSWORD: "pscale_pw_80Rvnv9V9K91TM2co5F7ljIE-Dqv5wTaF7l7jVatmIE",
     DATABASE: "nextdb"
-  },
+  }
 })
 
 export { pool };
