@@ -1,3 +1,7 @@
+import Mycom from '../components/my-component'
+
 export default function Custom404(){
-    return <h1>404</h1>
+    return (
+        <Mycom></Mycom>
+        )
 }
