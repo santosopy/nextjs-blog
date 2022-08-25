@@ -1,18 +1,20 @@
 import mysql from "serverless-mysql";
 
-// config: {
-//   host: "localhost",
-//   user: "root",
-//   password: "root",
-//   port: 3306,
-//   database: "nextdb",
-// },
+// const pool = mysql({
+//   config: {
+//     host: "localhost",
+//     user: "root",
+//     password: "root",
+//     port: 3306,
+//     database: "nextdb",
+//   },
+// })
 
 const pool = mysql({
   config: {
-    HOST: "y312s3i0b6z4.us-east-4.psdb.cloud",
-    USERNAME: "paj0h2wstg9r",
-    PASSWORD: "pscale_pw_N_37EFBk0HDKvVvaSArr_Amm5g34n_WWh3wQH0Hc3qg",
+    HOST: "xdsz6q0lo803.us-east-1.psdb.cloud",
+    USERNAME: "zrfgr7rj4tz3",
+    PASSWORD: "pscale_pw_-A8KqGU1Y540RJ5JK6vHWouFsX1rHARQTGLk31Yq4Fc",
     DATABASE: "nextdb"
   }
 })
