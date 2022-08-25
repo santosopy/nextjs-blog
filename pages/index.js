@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Date from '../components/date'
 
 export default function Home({ allPostsData }) {
+  console.log(process.env.NEXT_PUBLIC_URL)
   return (
     <Layout home>
       <Head>
