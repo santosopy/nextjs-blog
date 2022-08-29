@@ -1,8 +1,10 @@
+import {useState} from "react"
+
 function Header(props) {
     return <h1>{props.title ? props.title : 'Default title'}</h1>;
 }
 function Page(){
-    const [likes, setLikes] = React.useState(0)
+    const [likes, setLikes] = useState(0)
     function handleClick(){
         setLikes(likes + 1)
     }
