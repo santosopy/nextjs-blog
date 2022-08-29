@@ -1,4 +1,5 @@
 import Head from "next/head"
+import React, {useState} from "react"
 
 export default function About(){
     return (
@@ -15,3 +16,4 @@ export default function About(){
         </>
     )
 }
+

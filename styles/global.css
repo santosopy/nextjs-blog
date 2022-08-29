@@ -25,3 +25,114 @@ img {
   max-width: 100%;
   display: block;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+body {
+  padding: 5px
+}
+label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+th {
+  padding-top: 10px;
+}
+td {
+  padding: 2px;
+  padding-right: 40px;
+}
+
+/* backtotop */
+.container {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 100px;
+  background: orange;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+}
+
+.back-to-top:hover {
+  background: red;
+}
+
+/* Just some color boxes to make the page longer */
+.box {
+  width: 100%;
+  height: 80vh;
+  margin: 30px 0;
+}
+
+.box--1 {
+  background: yellow;
+}
+
+.box--2 {
+  background: green;
+}
+
+.box--3 {
+  background: pink;
+}
+
+.box--4 {
+  background: grey;
+}
+
+.box--5 {
+  background: purple;
+}
