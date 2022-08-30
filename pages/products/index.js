@@ -23,7 +23,7 @@ export default ProductsPage;
 
 export const getServerSideProps = async () => {
   const { data: products } = await axios.get(
-    "https://nextjs-blog-weld-three-72.vercel.app/api/products"
+    "http://localhost:3000/api/products"
   );
 
   return {
