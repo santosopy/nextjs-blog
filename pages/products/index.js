@@ -23,7 +23,7 @@ export default ProductsPage;
 
 export const getServerSideProps = async () => {
   const { data: products } = await axios.get(
-    "http://localhost:3000/api/products"
+    "https://nextjs-blog-santosopy.vercel.app/api/products"
   );
 
   return {
