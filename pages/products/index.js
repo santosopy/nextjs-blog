@@ -4,10 +4,7 @@ import { ProductCard } from "components/ProductCard";
 
 function ProductsPage({ products = [] }) {
   const renderProducts = () => {
-    if (products.length === 0) return <h1>No Products</h1>;
-    return products.map((product) => (
-      <ProductCard key={product.id} product={product} />
-    ));
+    return "aaa"
   };
 
   return (
@@ -25,7 +22,7 @@ export const getServerSideProps = async () => {
   const { data: products } = await axios.get(
     "http://localhost:3000/api/products"
   );
-
+  console.log(products)
   return {
     props: {
       products,
