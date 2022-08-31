@@ -13,9 +13,11 @@ export default async function handler(req, res) {
 
 const getProducts = async (req, res) => {
   try {
+    console.log(res)
     const results = await pool.query("SELECT * FROM product");
     return res.status(200).json(results);
   } catch (error) {
+    console.log(res)
     return res.status(500).json({ error });
   }
 };
