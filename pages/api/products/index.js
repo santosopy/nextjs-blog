@@ -1,7 +1,6 @@
-// import { pool } from "config/db";
-import { PSDB } from 'planetscale-node'
-
-const pool = new PSDB('main')
+import { pool } from "config/db";
+const mysql = require('mysql2')
+const connection = mysql.createConnection(process.env.DATABASE_URL)
 
 export default async function handler(req, res) {
   switch (req.method) {
@@ -14,10 +13,13 @@ export default async function handler(req, res) {
   }
 }
 
-const getProducts = async (req, res) => {
+const getProducts = (req, res) => {
   try {
-    const results = await pool.query("SELECT * FROM product");
-    return res.status(200).json(results);
+    connection.query('SELECT * FROM product', function (err, rows, fields) {
+      if (err) throw err
+      res.status(200).json(rows)
+    })
+    return
   } catch (error) {
     return res.status(500).json({ error });
   }
