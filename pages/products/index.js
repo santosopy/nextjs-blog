@@ -14,7 +14,7 @@ function ProductsPage({ products = [] }) {
     <Layout>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-4">
         test
-      </div>
+      </div>aaaa
     </Layout>
   );
 }
