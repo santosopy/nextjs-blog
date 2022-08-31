@@ -9,26 +9,24 @@ function ProductsPage({ products = [] }) {
   //     <ProductCard key={product.id} product={product} />
   //   ));
   // };
-
+  console.log(products)
   return (
     <Layout>
       <div className="grid gap-4 grid-cols-1 md:grid-cols-4">
-        test
-      </div>aaaa
+      </div>
     </Layout>
   );
 }
 
 export default ProductsPage;
 
-// export const getServerSideProps = async () => {
-//   const { data: products } = await axios.get(
-//     "https://nextjs-blog-flame-kappa-86.vercel.app/api/products"
-//   );
-
-//   return {
-//     props: {
-//       products,
-//     },
-//   };
-// };
+export const getServerSideProps = async () => {
+  const { data: products } = await axios.get(
+    "https://nextjs-blog-flame-kappa-86.vercel.app/api/products"
+  );
+  return {
+    props: {
+      products,
+    },
+  };
+};
