@@ -14,8 +14,8 @@ import mysql from "serverless-mysql";
 const pool = mysql({
   config: {
     HOST: "us-east.connect.psdb.cloud",
-    USERNAME: "csm73g36gr3zyzr2c9r9",
-    PASSWORD: "pscale_pw_mP8g7HSpvAjrvuwkUytcD3tPTf9Uy9QNgbMtfTlk0uG",
+    USERNAME: "k5il3h67ndcijdo3ijrx",
+    PASSWORD: "pscale_pw_iCsDVNDOHIyARYdB1KKtR2O6ZSCCJYFpPDwAIPexwlG",
     DATABASE: "productsdb",
   },
 })
