@@ -1,6 +1,4 @@
 import { pool } from "config/db";
-const { PSDB } = require('planetscale-node')
-const conn = new PSDB('main')
 
 export default async function handler(req, res) {
   switch (req.method) {
@@ -15,8 +13,6 @@ export default async function handler(req, res) {
 
 const getProducts = async (req, res) => {
   try {
-    onst [rows, fields] = await conn.query('select * from product')
-  console.log(rows, fields)
     const results = await pool.query("SELECT * FROM product");
     return res.status(200).json(results)
   } catch (error) {
