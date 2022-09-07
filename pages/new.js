@@ -14,7 +14,7 @@ function NewPage() {
 export default NewPage;
 
 export const getServerSideProps = async (context) => {
-  const res = await axios.get("http://localhost:3000/api/products");
+  const res = await axios.get("https://nextjs-blog-flame-kappa-86.vercel.app/api/products");
 
   return {
     props: {
