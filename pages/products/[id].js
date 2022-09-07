@@ -44,7 +44,7 @@ function ProductPage({ product }) {
 
 export const getServerSideProps = async ({ query }) => {
   const { data: product} = await axios.get(
-    "http://localhost:3000/api/products/" + query.id
+    "https://nextjs-blog-flame-kappa-86.vercel.app/api/products/" + query.id
   );
 
   console.log(product)
